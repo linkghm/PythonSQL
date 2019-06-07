@@ -85,3 +85,9 @@ finally:
     if (connection.is_connected()):
         cursor.close()
         connection.close()
+# 4 Python Connect to MySQL Using Connector Python C Extension
+# “use_pure” connection argument determines whether to connect using a pure Python interface to MySQL, or a C Extension.
+connection = mysql.connector.connect(host='localhost',
+                                     database='python_db',
+                                     user='pynative',
+                                     password='pynative@#29', use_pure=True)
